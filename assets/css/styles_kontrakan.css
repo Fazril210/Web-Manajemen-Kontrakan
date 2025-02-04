@@ -1,0 +1,344 @@
+/* Modern Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Container Layout with gradient background */
+.container {
+    margin-left: 280px;
+    padding: 40px;
+    background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%);
+    min-height: 100vh;
+}
+
+/* Enhanced Header Section */
+.header {
+    background: white;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 35px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.header h2 {
+    font-size: 32px;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Refined Grid Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 35px;
+    align-items: start;
+}
+
+/* Modernized Form Styling */
+.form-add-kontrakan, .form-add-kamar {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    margin-bottom: 5px;
+}
+
+.form-add-kontrakan h3, .form-add-kamar h3 {
+    font-size: 22px;
+    color: #1a237e;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #334155;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #1a237e;
+    box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.1);
+    outline: none;
+    background-color: white;
+}
+
+/* Enhanced Button Styling */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 35, 126, 0.2);
+}
+
+/* Styling for Cancel Button */
+.btn-cancel {
+    background: #475569;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-cancel:hover {
+    background: #ef4444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(55, 65, 81, 0.2);
+}
+
+
+/* Modern Table Styling */
+.table-section {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.table-section h3 {
+    font-size: 22px;
+    color: #1a237e;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table th {
+    background: #f8fafc;
+    color: #334155;
+    font-weight: 600;
+    padding: 16px;
+    text-align: left;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 14px;
+}
+
+table td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 14px;
+}
+
+table tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Enhanced Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.edit-btn {
+    background-color: #10b981;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+}
+
+/* Status Badge Styling */
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    min-width: 90px;
+}
+
+.status-terisi {
+    background-color: #28a745; /* Hijau */
+}
+
+.status-kosong {
+    background-color: #dc3545; /* Merah */
+}
+
+
+/* Responsive Design Improvements */
+@media (max-width: 1200px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .header, .form-add-kontrakan, .form-add-kamar, .table-section {
+        padding: 25px;
+    }
+    
+    .table-section {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 800px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header, .form-add-kontrakan, .form-add-kamar, .table-section {
+        padding: 15px; /* Reduce padding for very small screens */
+    } 
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .btn-submit, .btn-cancel {
+        padding: 10px;
+    }
+    
+    .form-group input, 
+    .form-group textarea, 
+    .form-group select {
+        padding: 10px; /* Smaller input fields */
+    }
+}
+
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 24px; /* Smaller heading for narrow screens */
+    }
+    
+    .form-group input, 
+    .form-group textarea, 
+    .form-group select {
+        font-size: 14px;
+    }
+
+    .btn-submit, .btn-cancel {
+        font-size: 14px; /* Adjust button font size */
+        padding: 12px;
+    }
+}
+
+/* Gaya untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: none; /* Awalnya sidebar tersembunyi */
+    }
+
+    .container {
+        margin-left: 0; /* Konten utama memenuhi seluruh layar */
+    }
+
+    .sidebar.active {
+        display: block; /* Tampilkan sidebar saat diperlukan */
+    }
+}
+
+/* Adjust container when sidebar is collapsed */
+@media screen and (min-width: 769px) {
+    .container {
+        transition: margin-left 0.3s ease;
+    }
+
+    .wrapper.sidebar-collapsed .container {
+        margin-left: 80px; /* Adjust to match minimal sidebar width */
+    }
+}
